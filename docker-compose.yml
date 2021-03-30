@@ -42,7 +42,6 @@ services:
       - "8181:8090"
     networks:
       - app-network
-
   susy_sign_direct_oracle:
     image: gravityhuborg/gravity-oracle:master
     container_name: susy_sign_direct_oracle
@@ -85,7 +84,6 @@ services:
       - "8191:8090"
     networks:
       - app-network
-
   susy_heco_usdn_direct_oracle:
     image: gravityhuborg/gravity-oracle:master
     container_name: susy_heco_usdn_direct_oracle
@@ -128,8 +126,7 @@ services:
       - "8291:8090"
     networks:
       - app-network
-
-   susy_ftm_usdn_direct_oracle:
+  susy_ftm_usdn_direct_oracle:
     image: gravityhuborg/gravity-oracle:master
     container_name: susy_ftm_usdn_direct_oracle
     tty: true
@@ -171,7 +168,6 @@ services:
       - "8301:8090"
     networks:
       - app-network
-
 networks:
   app-network:
     driver: bridge

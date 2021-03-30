@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 main() {
     home=''
 
@@ -18,7 +17,8 @@ main() {
 
     for file in $(ls ./nebulae)
     do
-        sudo ln -fs "$PWD/nebulae/$file" "$home/nebulae/$file"
+        # sudo ln -fs "$PWD/nebulae/$file" "$home/nebulae/$file"
+        cp -f "$PWD/nebulae/$file" "$home/nebulae/$file"
     done
 
 
@@ -29,10 +29,11 @@ main() {
 
     for file in $(ls ./extractors)
     do
-        sudo ln -fs "$PWD/extractors/$file" "/home/extractor-configs/$file"
+        # sudo ln -fs "$PWD/extractors/$file" "/home/extractor-configs/$file"
+        cp -f "$PWD/extractors/$file" "/home/extractor-configs/$file"
     done
 
-    docker-compose up -d
+    # docker-compose up -d
 }
 
 main $@
