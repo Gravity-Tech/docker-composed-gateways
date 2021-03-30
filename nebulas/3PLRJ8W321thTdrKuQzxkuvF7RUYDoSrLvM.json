@@ -1,0 +1,8 @@
+{
+  "TargetChainNodeUrl": "https://nodes.wavesexplorer.com",
+  "ChainId": "W",
+  "GravityNodeUrl": "http://172.17.0.1:26657",
+  "ChainType": "waves",
+  "ExtractorUrl": "http://172.17.0.1:8291",
+  "BlocksInterval": 4
+}
