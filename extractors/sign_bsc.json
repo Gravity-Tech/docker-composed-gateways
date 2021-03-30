@@ -1,0 +1,8 @@
+{
+  "SourceDecimals": 8,
+  "DestinationDecimals": 18,
+  "SourceNodeURL": "https://nodes.wavesexplorer.com",
+  "DestinationNodeURL": "https://bsc-dataseed1.binance.org",
+  "IBPortAddress": "0x072232c6B713024e04D596bf68f1B22AC123af7f",
+  "LUPortAddress": "3PKKYSedPuFuExJCweD52mj1MtjJLT8da9g"
+}
