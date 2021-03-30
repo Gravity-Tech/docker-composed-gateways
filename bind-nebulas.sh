@@ -15,6 +15,7 @@ main() {
 
     # ln -s "$home/nebulae/"
 
+    # external context SYMLINKS are not supported by docker
     for file in $(ls ./nebulae)
     do
         # sudo ln -fs "$PWD/nebulae/$file" "$home/nebulae/$file"
@@ -33,7 +34,7 @@ main() {
         cp -f "$PWD/extractors/$file" "/home/extractor-configs/$file"
     done
 
-    # docker-compose up -d
+    docker-compose up -d
 }
 
 main $@
