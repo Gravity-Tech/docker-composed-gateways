@@ -1,0 +1,8 @@
+{
+  "SourceDecimals": 6,
+  "DestinationDecimals": 18,
+  "SourceNodeURL": "https://nodes.wavesexplorer.com",
+  "DestinationNodeURL": "https://api.avax.network/ext/bc/C/rpc",
+  "IBPortAddress": "0x9a7B1800CE35aAca97d7Aa06d82F61cb971E947c",
+  "LUPortAddress": "3PDdegFA8R2jUAZHpppcyAdQJ5BFsSMx4Pm"
+}
