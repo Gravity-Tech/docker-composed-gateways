@@ -168,6 +168,48 @@ services:
       - "8301:8090"
     networks:
       - app-network
+  susy_avax_usdn_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_avax_usdn_direct_oracle
+    tty: true
+    environment:
+      - NEBULA_ADDRESS=0x97D58D2c46F77D245bbe36e2D3DAD14e929f9bc2
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_avax_usdn_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_avax_usdn_reverse_oracle
+    tty: true
+    environment:
+      - NEBULA_ADDRESS=3PLnuvyzpTmQUTDSEaDABofhv2RSybxkfVX
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_avax_usdn_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_avax_usdn_direct_extractor
+    tty: true
+    command: --config /etc/extractor/usdn_avax.json --type "waves-based-to-eth-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8310:8090"
+    networks:
+      - app-network
+  susy_avax_usdn_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_avax_usdn_reverse_extractor
+    tty: true
+    command: --config /etc/extractor/usdn_avax.json --type "waves-based-to-eth-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8311:8090"
+    networks:
+      - app-network
 networks:
   app-network:
     driver: bridge
