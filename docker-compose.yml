@@ -253,6 +253,28 @@ services:
       - "8322:8090"
     networks:
       - app-network
+  susy_polygon_matic_gton_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_polygon_matic_gton_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=DokdpdsTWfrkfzieboqdjjerTrskCCz5a8gGX9df6ACm
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_polygon_matic_gton_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_polygon_matic_gton_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xA54F86308bDdC2bc00F452980b247cd0E1324c15
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
 networks:
   app-network:
     driver: bridge
