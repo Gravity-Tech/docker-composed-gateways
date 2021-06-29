@@ -1,0 +1,8 @@
+{
+  "TargetChainNodeUrl": "https://rpc-mainnet.matic.network",
+  "ChainId": "137",
+  "GravityNodeUrl": "http://172.17.0.1:26657",
+  "ChainType": "polygon",
+  "ExtractorUrl": "http://172.17.0.1:8323",
+  "BlocksInterval": 10
+}

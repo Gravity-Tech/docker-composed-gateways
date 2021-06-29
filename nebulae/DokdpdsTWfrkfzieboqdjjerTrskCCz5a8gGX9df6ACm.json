@@ -1,0 +1,12 @@
+{
+    "TargetChainNodeUrl": "https://api.mainnet-beta.solana.com",
+    "ChainId": "",
+    "GravityNodeUrl": "http://172.17.0.1:26657",
+    "ChainType": "solana",
+    "ExtractorUrl": "http://172.17.0.1:8312",
+    "BlocksInterval": 200,
+    "Custom": {
+       "nebula_contract":"GdpckpuXuwW6C9cWfdzfpszpfZMwGfmDYH4JbfeS4dAh",
+       "multisig_account":"3nxzQwaSVeeakDdkeG69WK5qGv1YuXJ4gF5pNTS81BEw"
+    }
+  }
