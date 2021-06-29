@@ -229,6 +229,30 @@ services:
       - "8311:8090"
     networks:
       - app-network
+  susy_polygon_matic_gton_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_polygon_matic_gton_direct_extractor
+    tty: true
+    restart: always
+    command: --config /etc/extractor/gton_polygon_solana.json --type "evm-based-to-solana-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8321:8090"
+    networks:
+      - app-network
+  susy_polygon_matic_gton_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_polygon_matic_gton_reverse_extractor
+    tty: true
+    restart: always
+    command: --config /etc/extractor/gton_polygon_solana.json --type "waves-based-to-eth-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8322:8090"
+    networks:
+      - app-network
 networks:
   app-network:
     driver: bridge
