@@ -27,7 +27,7 @@ services:
     container_name: susy_swop_direct_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/swop_bsc.json --type "waves-based-to-eth-direct"
+    command: --config swop_bsc.json --type "waves-based-to-eth-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -39,7 +39,7 @@ services:
     container_name: susy_swop_reverse_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/swop_bsc.json --type "waves-based-to-eth-reverse"
+    command: --config swop_bsc.json --type "waves-based-to-eth-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -73,7 +73,7 @@ services:
     container_name: susy_sign_direct_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/sign_bsc.json --type "waves-based-to-eth-direct"
+    command: --config sign_bsc.json --type "waves-based-to-eth-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -84,7 +84,7 @@ services:
     image: gravityhuborg/gravity-data-extractor:master
     container_name: susy_sign_reverse_extractor
     tty: true
-    command: --config /etc/extractor/sign_bsc.json --type "waves-based-to-eth-reverse"
+    command: --config sign_bsc.json --type "waves-based-to-eth-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -118,7 +118,7 @@ services:
     container_name: susy_heco_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/usdn_heco.json --type "waves-based-to-eth-direct"
+    command: --config usdn_heco.json --type "waves-based-to-eth-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -130,7 +130,7 @@ services:
     container_name: susy_heco_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/usdn_heco.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_heco.json --type "waves-based-to-eth-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -164,7 +164,7 @@ services:
     container_name: susy_ftm_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/usdn_ftm.json --type "waves-based-to-eth-direct"
+    command: --config usdn_ftm.json --type "waves-based-to-eth-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -176,7 +176,7 @@ services:
     container_name: susy_ftm_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/usdn_ftm.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_ftm.json --type "waves-based-to-eth-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -210,7 +210,7 @@ services:
     container_name: susy_avax_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/usdn_avax.json --type "waves-based-to-eth-direct"
+    command: --config usdn_avax.json --type "waves-based-to-eth-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -222,7 +222,7 @@ services:
     container_name: susy_avax_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/usdn_avax.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_avax.json --type "waves-based-to-eth-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -234,7 +234,7 @@ services:
     container_name: susy_polygon_matic_gton_direct_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/gton_polygon_solana.json --type "evm-based-to-solana-direct"
+    command: --config gton_polygon_solana.json --type "evm-based-to-solana-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -246,7 +246,7 @@ services:
     container_name: susy_polygon_matic_gton_reverse_extractor
     tty: true
     restart: always
-    command: --config /etc/extractor/gton_polygon_solana.json --type "waves-based-to-eth-reverse"
+    command: --config gton_polygon_solana.json --type "waves-based-to-eth-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
