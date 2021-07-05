@@ -1,0 +1,8 @@
+{
+ "TargetChainNodeUrl": "https://rpcapi.fantom.network",
+ "ChainId": "",
+ "GravityNodeUrl": "http://localhost:26657",
+ "ChainType": "ftm",
+ "ExtractorUrl": "http://212.111.41.159:8088",
+ "BlocksInterval": 40
+}
