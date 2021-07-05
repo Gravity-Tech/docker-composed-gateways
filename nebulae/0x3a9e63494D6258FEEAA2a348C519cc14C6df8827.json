@@ -1,0 +1,8 @@
+{
+  "TargetChainNodeUrl": "https://bsc-dataseed1.binance.org",
+  "ChainId": "",
+  "GravityNodeUrl": "http://localhost:26657",
+  "ChainType": "bsc",
+  "ExtractorUrl": "http://localhost:8323",
+  "BlocksInterval": 10
+}

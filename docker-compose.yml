@@ -229,6 +229,52 @@ services:
       - "8311:8090"
     networks:
       - app-network
+  susy_bsc_usdn_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_bsc_usdn_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x3a9e63494D6258FEEAA2a348C519cc14C6df8827
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_bsc_usdn_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_bsc_usdn_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=3P5SKDHPTBF1Spe1nzEA11GFjfuv1V59zVd
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_bsc_usdn_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_bsc_usdn_direct_extractor
+    tty: true
+    restart: always
+    command: --config usdn_bsc.json --type "waves-based-to-eth-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8323:8090"
+    networks:
+      - app-network
+  susy_bsc_usdn_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_bsc_usdn_reverse_extractor
+    tty: true
+    restart: always
+    command: --config usdn_bsc.json --type "waves-based-to-eth-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8324:8090"
+    networks:
+      - app-network
   susy_polygon_matic_gton_direct_extractor:
     image: gravityhuborg/gravity-data-extractor:master
     container_name: susy_polygon_matic_gton_direct_extractor
