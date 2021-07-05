@@ -321,7 +321,7 @@ services:
       - /home/main2:/etc/gravity
     networks:
       - app-network
-  graviton_oracle:
+  graviton_gton_lp_locking_oracle:
     image: gravityhuborg/gravity-oracle:master
     container_name: graviton_oracle
     tty: true
