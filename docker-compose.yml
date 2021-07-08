@@ -292,7 +292,7 @@ services:
     container_name: susy_polygon_matic_gton_reverse_extractor
     tty: true
     restart: always
-    command: --config gton_polygon_solana.json --type "waves-based-to-eth-reverse"
+    command: --config gton_polygon_solana.json --type "evm-based-to-solana-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
