@@ -1,5 +1,5 @@
 {
-  "TargetChainNodeUrl": "https://rpc-mainnet.maticvigil.com",
+  "TargetChainNodeUrl": "https://rpc-mainnet.maticvigil.com/v1/2f581f46c671855c44af99074a017ccdb82ae83f",
   "ChainId": "137",
   "GravityNodeUrl": "http://172.17.0.1:26657",
   "ChainType": "polygon",

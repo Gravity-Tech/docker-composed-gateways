@@ -1,7 +1,7 @@
 {
   "SourceDecimals": 18,
   "DestinationDecimals": 8,
-  "SourceNodeURL": "https://matic-mainnet.chainstacklabs.com",
+  "SourceNodeURL": "https://rpc-mainnet.maticvigil.com/v1/2f581f46c671855c44af99074a017ccdb82ae83f",
   "DestinationNodeURL": "https://api.mainnet-beta.solana.com",
   "LUPortAddress": "0xD2C80231a5E1C7B621c2bb96819b20a00E1be7D2",
   "IBPortAddress": "B9mZLg1yk7eFPBJ7PSN15tHVzuWidKg5L68uzCiSAsSm",
