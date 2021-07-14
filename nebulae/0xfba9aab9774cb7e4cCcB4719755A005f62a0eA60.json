@@ -1,5 +1,5 @@
 {
-  "TargetChainNodeUrl": "https://apis.ankr.com/6052791850e6426392593b0ddba45bf5/d37735e535d9d051230799cae45aeb6a/polygon/full/main",
+  "TargetChainNodeUrl": "https://matic-mainnet.chainstacklabs.com",
   "ChainId": "137",
   "GravityNodeUrl": "http://172.17.0.1:26657",
   "ChainType": "polygon",
