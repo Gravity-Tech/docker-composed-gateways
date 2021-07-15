@@ -323,11 +323,44 @@ services:
       - app-network
   graviton_gton_lp_locking_oracle:
     image: gravityhuborg/gravity-oracle:master
-    container_name: graviton_oracle
+    container_name: graviton_gton_lp_locking_oracle
     tty: true
     restart: always
     environment:
       - NEBULA_ADDRESS=0x2FAC2013Fc3a9ca6e0a9FD84037b3DD0d3ceD57A
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_fantom_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_fantom_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xFE2d969a870f1d439145842baE8EE497Df530F63
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_binance_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_binance_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xBedeB7c59857476394FA93C9F9049cc060B022de
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_polygon_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_polygon_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x697d6e1f1c97b2ee0b56c42f6bd25fd0bd7355c1
     volumes:
       - /home/main2:/etc/gravity
     networks:
