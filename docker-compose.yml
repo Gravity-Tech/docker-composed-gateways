@@ -305,7 +305,7 @@ services:
     tty: true
     restart: always
     environment:
-      - NEBULA_ADDRESS=B5WUzWR2uNMwQhziPH882JekyQSmYHUt5N1LtpLdmSNB
+      - NEBULA_ADDRESS=8rDMctM2ikqdgcYTK2QdgQ9m8zDQbqZCMaeJDn2RfxyR
     volumes:
       - /home/main2:/etc/gravity
     networks:
