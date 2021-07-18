@@ -6,7 +6,7 @@
   "ExtractorUrl": "http://172.17.0.1:8321",
   "BlocksInterval": 65,
   "Custom": {
-    "nebula_contract": "8rDMctM2ikqdgcYTK2QdgQ9m8zDQbqZCMaeJDn2RfxyR",
+    "nebula_program": "B5WUzWR2uNMwQhziPH882JekyQSmYHUt5N1LtpLdmSNB",
     "multisig_account": "AY3Chiw1GEuQt9dSkBapzwU42DBSN8zAQAFZ12ajscpj",
     "ib_port_program": "AH3QKaj942UUxDjaRaGh7hvdadsD8yfU9LRTa9KXfJkZ",
     "ib_port_data": "B9mZLg1yk7eFPBJ7PSN15tHVzuWidKg5L68uzCiSAsSm",
