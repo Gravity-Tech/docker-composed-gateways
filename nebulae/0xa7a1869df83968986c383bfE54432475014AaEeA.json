@@ -3,6 +3,6 @@
  "ChainId": "",
  "GravityNodeUrl": "http://172.17.0.1:26657",
  "ChainType": "ftm",
- "ExtractorUrl": "http://172.104.247.39:8090",
+ "ExtractorUrl": "http://172.104.247.39:8089",
  "BlocksInterval": 40
 }
