@@ -365,6 +365,39 @@ services:
       - /home/main2:/etc/gravity
     networks:
       - app-network
+  relay_token_heco_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_heco_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x154c0859b1a74dBf57cad422847c77F6C8D33E0C
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_xdai_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_xdai_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x49b6431BDcd6CFaf79a3a5309261cB268642d8C0
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_avax_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_avax_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x154c0859b1a74dBf57cad422847c77F6C8D33E0C
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
 networks:
   app-network:
     driver: bridge
