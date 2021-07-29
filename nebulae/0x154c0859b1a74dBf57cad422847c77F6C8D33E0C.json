@@ -1,0 +1,8 @@
+{
+ "TargetChainNodeUrl": "https://api.avax.network/ext/bc/C/rpc",
+ "ChainId": "",
+ "GravityNodeUrl": "http://172.17.0.1:26657",
+ "ChainType": "avax",
+ "ExtractorUrl": "http://172.104.247.39:8094",
+ "BlocksInterval": 10
+}
