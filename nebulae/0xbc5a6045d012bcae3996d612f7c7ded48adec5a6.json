@@ -1,0 +1,8 @@
+{
+    "TargetChainNodeUrl": "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+    "ChainId": "",
+    "GravityNodeUrl": "http://172.17.0.1:26657",
+    "ChainType": "heco",
+    "ExtractorUrl": "http://172.104.247.39:8322",
+    "BlocksInterval": 10
+}
