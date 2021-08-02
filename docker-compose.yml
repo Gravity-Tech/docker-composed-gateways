@@ -275,48 +275,48 @@ services:
       - "8324:8090"
     networks:
       - app-network
-  susy_polygon_matic_gton_direct_extractor:
+  susy_ethereum_solana_gton_direct_extractor:
     image: gravityhuborg/gravity-data-extractor:master
-    container_name: susy_polygon_matic_gton_direct_extractor
+    container_name: susy_ethereum_solana_gton_direct_extractor
     tty: true
     restart: always
-    command: --config gton_polygon_solana.json --type "evm-based-to-solana-direct"
+    command: --config gton_eth_solana.json --type "evm-based-to-solana-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
       - "8321:8090"
     networks:
       - app-network
-  susy_polygon_matic_gton_reverse_extractor:
+  susy_ethereum_solana_gton_reverse_extractor:
     image: gravityhuborg/gravity-data-extractor:master
-    container_name: susy_polygon_matic_gton_reverse_extractor
+    container_name: susy_ethereum_solana_gton_reverse_extractor
     tty: true
     restart: always
-    command: --config gton_polygon_solana.json --type "evm-based-to-solana-reverse"
+    command: --config gton_eth_solana.json --type "evm-based-to-solana-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
       - "8322:8090"
     networks:
       - app-network
-  susy_polygon_matic_gton_direct_oracle:
+  susy_ethereum_solana_gton_direct_oracle:
     image: gravityhuborg/gravity-oracle:master
-    container_name: susy_polygon_matic_gton_direct_oracle
+    container_name: susy_ethereum_solana_gton_direct_oracle
     tty: true
     restart: always
     environment:
-      - NEBULA_ADDRESS=8rDMctM2ikqdgcYTK2QdgQ9m8zDQbqZCMaeJDn2RfxyR
+      - NEBULA_ADDRESS=9Je9bU2wSqmCFWVYv8prcMyrPhQbwAvmwrjz4s6itd1j
     volumes:
       - /home/main2:/etc/gravity
     networks:
       - app-network
-  susy_polygon_matic_gton_reverse_oracle:
+  susy_ethereum_solana_gton_reverse_oracle:
     image: gravityhuborg/gravity-oracle:master
-    container_name: susy_polygon_matic_gton_reverse_oracle
+    container_name: susy_ethereum_solana_gton_reverse_oracle
     tty: true
     restart: always
     environment:
-      - NEBULA_ADDRESS=0xfba9aab9774cb7e4cCcB4719755A005f62a0eA60
+      - NEBULA_ADDRESS=0xbc5a6045d012bcae3996d612f7c7ded48adec5a6
     volumes:
       - /home/main2:/etc/gravity
     networks:
