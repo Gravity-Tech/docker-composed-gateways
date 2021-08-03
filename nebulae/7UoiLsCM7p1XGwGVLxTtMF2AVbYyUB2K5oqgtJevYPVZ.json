@@ -1,0 +1,16 @@
+{
+  "TargetChainNodeUrl": "https://api.mainnet-beta.solana.com",
+  "ChainId": "",
+  "GravityNodeUrl": "http://172.17.0.1:26657",
+  "ChainType": "solana",
+  "ExtractorUrl": "http://172.17.0.1:8326",
+  "BlocksInterval": 65,
+  "Custom": {
+    "nebula_program": "B5WUzWR2uNMwQhziPH882JekyQSmYHUt5N1LtpLdmSNB",
+    "multisig_account": "FQAWe2pnV3uAW4ZbrbSbsogdm8YG6AwqNLgESeYDjMYG",
+    "ib_port_program": "DSZqp3Q3ydt5HeFeX1PfZJWAK8Re7ZoitK3eoot2aRyY",
+    "ib_port_data": "HvS1cV4LLZ2ffmzhpN9KRLb2rbjt1N2x9SGzPCP6YU57",
+    "token_program": "SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt",
+    "ib_port_pda": "8drhoQ7iAYD9DLY5RBxtQ8BS9vWRMF4nkGG1bnsED9su"
+  }
+}

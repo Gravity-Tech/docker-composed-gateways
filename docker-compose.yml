@@ -321,6 +321,52 @@ services:
       - /home/main2:/etc/gravity
     networks:
       - app-network
+  susy_solana_bsc_srm_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_solana_bsc_srm_direct_extractor
+    tty: true
+    restart: always
+    command: --config srm_solana_bsc.json --type "evm-based-to-solana-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8325:8090"
+    networks:
+      - app-network
+  susy_solana_bsc_srm_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_solana_bsc_srm_reverse_extractor
+    tty: true
+    restart: always
+    command: --config srm_solana_bsc.json --type "evm-based-to-solana-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8326:8090"
+    networks:
+      - app-network
+  susy_solana_bsc_srm_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_solana_bsc_srm_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x3ddc57fa7dd7dd041d3a3c58673dce42e841e1a6
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_solana_bsc_srm_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_solana_bsc_srm_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=7UoiLsCM7p1XGwGVLxTtMF2AVbYyUB2K5oqgtJevYPVZ
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
   graviton_gton_lp_locking_oracle:
     image: gravityhuborg/gravity-oracle:master
     container_name: graviton_gton_lp_locking_oracle
