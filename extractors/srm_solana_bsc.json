@@ -1,0 +1,11 @@
+{
+  "SourceDecimals": 18,
+  "DestinationDecimals": 8,
+  "SourceNodeURL": "https://api.mainnet-beta.solana.com",
+  "DestinationNodeURL": "https://bsc-dataseed1.binance.org",
+  "LUPortAddress": "HvS1cV4LLZ2ffmzhpN9KRLb2rbjt1N2x9SGzPCP6YU57",
+  "IBPortAddress": "0xcaf70913e0d5aa78d696ffe8465d76bd4712be2e",
+  "Meta": {
+    "token_mint": "0x8c54f0941dd56b12b90ac18d0d0fdf7e62d4c099"
+  }
+}
