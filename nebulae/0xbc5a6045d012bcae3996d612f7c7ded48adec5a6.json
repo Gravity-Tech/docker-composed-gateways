@@ -2,7 +2,7 @@
     "TargetChainNodeUrl": "https://target.nodes.gravityhub.org/ethereum",
     "ChainId": "",
     "GravityNodeUrl": "http://172.17.0.1:26657",
-    "ChainType": "heco",
+    "ChainType": "ethereum",
     "ExtractorUrl": "http://172.104.247.39:8322",
     "BlocksInterval": 10
 }
