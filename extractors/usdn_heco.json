@@ -1,8 +1,8 @@
 {
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
-  "SourceNodeURL": "https://nodes.wavesexplorer.com",
-  "DestinationNodeURL": "https://http-mainnet.hecochain.com",
+  "SourceNodeURL": "https://target.nodes.gravityhub.org?tc=waves",
+  "DestinationNodeURL": "https://target.nodes.gravityhub.org?tc=heco",
   "IBPortAddress": "0x4d43E4ed92469F38839ea2077db7649BC7c175ef",
   "LUPortAddress": "3P5ASZYdgDgB6uLKaeVxZmcf71gFhwzDvH2"
 }

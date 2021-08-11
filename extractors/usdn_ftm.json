@@ -1,8 +1,8 @@
 {
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
-  "SourceNodeURL": "https://nodes.wavesexplorer.com",
-  "DestinationNodeURL": "https://rpcapi.fantom.network",
+  "SourceNodeURL": "https://target.nodes.gravityhub.org?tc=waves",
+  "DestinationNodeURL": "https://target.nodes.gravityhub.org?tc=ftm",
   "IBPortAddress": "0x83d97d01db4ae12CB637e0732BbB3569d0D218e9",
   "LUPortAddress": "3PPJ2HnXKjuaTopung1K2DsrgMigpwXHsFF"
 }

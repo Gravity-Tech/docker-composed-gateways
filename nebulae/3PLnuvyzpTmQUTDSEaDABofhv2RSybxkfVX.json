@@ -1,5 +1,5 @@
 {
- "TargetChainNodeUrl": "https://nodes.wavesexplorer.com",
+ "TargetChainNodeUrl": "https://target.nodes.gravityhub.org?tc=waves",
  "ChainId": "W",
  "GravityNodeUrl": "http://172.17.0.1:26657",
  "ChainType": "waves",

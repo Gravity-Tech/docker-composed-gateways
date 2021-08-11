@@ -1,5 +1,5 @@
 {
-  "TargetChainNodeUrl": "https://bsc-dataseed1.binance.org",
+  "TargetChainNodeUrl": "https://target.nodes.gravityhub.org?tc=bsc",
   "ChainId": "",
   "GravityNodeUrl": "http://172.17.0.1:26657",
   "ChainType": "bsc",

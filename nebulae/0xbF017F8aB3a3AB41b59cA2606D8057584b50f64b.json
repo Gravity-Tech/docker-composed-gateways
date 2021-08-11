@@ -1,5 +1,5 @@
 {
- "TargetChainNodeUrl": "https://matic-mainnet.chainstacklabs.com",
+ "TargetChainNodeUrl": "https://target.nodes.gravityhub.org?tc=polygon",
  "ChainId": "137",
  "GravityNodeUrl": "http://172.17.0.1:26657",
  "ChainType": "polygon",
