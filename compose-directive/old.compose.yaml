@@ -1,0 +1,16 @@
+version: "3"
+services:
+  graviton_gton_lp_locking_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: graviton_gton_lp_locking_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x2FAC2013Fc3a9ca6e0a9FD84037b3DD0d3ceD57A
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

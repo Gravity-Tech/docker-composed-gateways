@@ -1,0 +1,52 @@
+
+version: "3"
+services:
+  susy_ethereum_solana_gton_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_ethereum_solana_gton_direct_extractor
+    tty: true
+    restart: always
+    command: --config gton_eth_solana.json --type "evm-solana-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8321:8090"
+    networks:
+      - app-network
+  susy_ethereum_solana_gton_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_ethereum_solana_gton_reverse_extractor
+    tty: true
+    restart: always
+    command: --config gton_eth_solana.json --type "evm-solana-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8322:8090"
+    networks:
+      - app-network
+  susy_ethereum_solana_gton_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_ethereum_solana_gton_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=9Je9bU2wSqmCFWVYv8prcMyrPhQbwAvmwrjz4s6itd1j
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_ethereum_solana_gton_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_ethereum_solana_gton_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xbc5a6045d012bcae3996d612f7c7ded48adec5a6
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

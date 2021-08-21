@@ -1,0 +1,96 @@
+version: "3"
+services:
+  susy_sign_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_sign_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x746ab504C722292E43520d5FDA6Fd2c79a046065
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_sign_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_sign_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=3PLN7YKkWMjFNXqTTFYRMgS3D1HfZ1tL6XN
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_sign_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_sign_direct_extractor
+    tty: true
+    restart: always
+    command: --config sign_bsc.json --type "waves-evm-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8190:8090"
+    networks:
+      - app-network
+  susy_sign_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_sign_reverse_extractor
+    tty: true
+    command: --config sign_bsc.json --type "waves-evm-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8191:8090"
+    networks:
+      - app-network
+  susy_bsc_usdn_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_bsc_usdn_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x3a9e63494D6258FEEAA2a348C519cc14C6df8827
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_bsc_usdn_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_bsc_usdn_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=3P5SKDHPTBF1Spe1nzEA11GFjfuv1V59zVd
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_bsc_usdn_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_bsc_usdn_direct_extractor
+    tty: true
+    restart: always
+    command: --config usdn_bsc.json --type "waves-evm-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8323:8090"
+    networks:
+      - app-network
+  susy_bsc_usdn_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_bsc_usdn_reverse_extractor
+    tty: true
+    restart: always
+    command: --config usdn_bsc.json --type "waves-evm-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8324:8090"
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

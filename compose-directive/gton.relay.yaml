@@ -1,0 +1,71 @@
+version: "3"
+services:
+  relay_token_fantom_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_fantom_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xa7a1869df83968986c383bfE54432475014AaEeA
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_binance_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_binance_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xAA7D9DD236F2E649A431A6ec157065683A60E2d5
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_polygon_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_polygon_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xbF017F8aB3a3AB41b59cA2606D8057584b50f64b
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_heco_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_heco_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x1E2327842A5aE79230d2217422065Bd709809E76
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_xdai_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_xdai_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x49b6431BDcd6CFaf79a3a5309261cB268642d8C0
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  relay_token_avax_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: relay_token_avax_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x154c0859b1a74dBf57cad422847c77F6C8D33E0C
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
