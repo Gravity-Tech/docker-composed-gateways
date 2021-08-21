@@ -34,7 +34,7 @@ main() {
         cp -f "$PWD/extractors/$file" "/home/extractor-configs/$file"
     done
 
-    docker-compose up -d
+    bash apply.sh 'up -d'
 }
 
 main $@
