@@ -27,7 +27,7 @@ services:
     container_name: susy_sign_direct_extractor
     tty: true
     restart: always
-    command: --config sign_bsc.json --type "waves-based-to-eth-direct"
+    command: --config sign_bsc.json --type "waves-evm-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -38,7 +38,7 @@ services:
     image: gravityhuborg/gravity-data-extractor:master
     container_name: susy_sign_reverse_extractor
     tty: true
-    command: --config sign_bsc.json --type "waves-based-to-eth-reverse"
+    command: --config sign_bsc.json --type "waves-evm-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -72,7 +72,7 @@ services:
     container_name: susy_bsc_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config usdn_bsc.json --type "waves-based-to-eth-direct"
+    command: --config usdn_bsc.json --type "waves-evm-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -84,7 +84,7 @@ services:
     container_name: susy_bsc_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config usdn_bsc.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_bsc.json --type "waves-evm-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -96,7 +96,7 @@ services:
     container_name: susy_ethereum_solana_gton_direct_extractor
     tty: true
     restart: always
-    command: --config gton_eth_solana.json --type "evm-based-to-solana-direct"
+    command: --config gton_eth_solana.json --type "evm-solana-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -108,7 +108,7 @@ services:
     container_name: susy_ethereum_solana_gton_reverse_extractor
     tty: true
     restart: always
-    command: --config gton_eth_solana.json --type "evm-based-to-solana-reverse"
+    command: --config gton_eth_solana.json --type "evm-solana-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
