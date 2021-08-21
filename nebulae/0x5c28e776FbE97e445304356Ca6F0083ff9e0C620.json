@@ -1,8 +1,8 @@
 {
- "TargetChainNodeUrl": "https://api.avax.network/ext/bc/C/rpc",
- "ChainId": "",
- "GravityNodeUrl": "http://172.17.0.1:26657",
- "ChainType": "avax",
- "ExtractorUrl": "http://ec2-18-133-188-105.eu-west-2.compute.amazonaws.com:32266",
- "BlocksInterval": 10
+    "TargetChainNodeUrl": "https://api.avax.network/ext/bc/C/rpc/",
+    "ChainId": "",
+    "GravityNodeUrl": "http://172.17.0.1:26657",
+    "ChainType": "avax",
+    "ExtractorUrl": "http://ec2-18-133-188-105.eu-west-2.compute.amazonaws.com:32266",
+    "BlocksInterval": 15
 }
