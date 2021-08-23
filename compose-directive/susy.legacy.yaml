@@ -72,7 +72,7 @@ services:
     container_name: susy_heco_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config usdn_heco.json --type "waves-based-to-eth-direct"
+    command: --config usdn_heco.json --type "waves-evm-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -84,7 +84,7 @@ services:
     container_name: susy_heco_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config usdn_heco.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_heco.json --type "waves-evm-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -118,7 +118,7 @@ services:
     container_name: susy_ftm_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config usdn_ftm.json --type "waves-based-to-eth-direct"
+    command: --config usdn_ftm.json --type "waves-evm-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -130,7 +130,7 @@ services:
     container_name: susy_ftm_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config usdn_ftm.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_ftm.json --type "waves-evm-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -164,7 +164,7 @@ services:
     container_name: susy_avax_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config usdn_avax.json --type "waves-based-to-eth-direct"
+    command: --config usdn_avax.json --type "waves-evm-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -176,7 +176,7 @@ services:
     container_name: susy_avax_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config usdn_avax.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_avax.json --type "waves-evm-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -210,7 +210,7 @@ services:
     container_name: susy_bsc_usdn_direct_extractor
     tty: true
     restart: always
-    command: --config usdn_bsc.json --type "waves-based-to-eth-direct"
+    command: --config usdn_bsc.json --type "waves-evm-direct"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
@@ -222,7 +222,7 @@ services:
     container_name: susy_bsc_usdn_reverse_extractor
     tty: true
     restart: always
-    command: --config usdn_bsc.json --type "waves-based-to-eth-reverse"
+    command: --config usdn_bsc.json --type "waves-evm-reverse"
     volumes:
       - /home/extractor-configs:/etc/extractor
     ports:
