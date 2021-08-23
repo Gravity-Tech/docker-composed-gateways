@@ -1,9 +1,9 @@
 
 version: "3"
 services:
-  susy_solana_bsc_gton_direct_extractor:
+  susy_solana_bsc_ray_direct_extractor:
     image: gravityhuborg/gravity-data-extractor:master
-    container_name: susy_solana_bsc_gton_direct_extractor
+    container_name: susy_solana_bsc_ray_direct_extractor
     tty: true
     restart: always
     command: --config ray_solana_bsc.json --type "solana-evm-direct"
@@ -13,9 +13,9 @@ services:
       - "8381:8090"
     networks:
       - app-network
-  susy_solana_bsc_gton_reverse_extractor:
+  susy_solana_bsc_ray_reverse_extractor:
     image: gravityhuborg/gravity-data-extractor:master
-    container_name: susy_solana_bsc_gton_reverse_extractor
+    container_name: susy_solana_bsc_ray_reverse_extractor
     tty: true
     restart: always
     command: --config ray_solana_bsc.json --type "solana-evm-reverse"
@@ -25,9 +25,9 @@ services:
       - "8382:8090"
     networks:
       - app-network
-  susy_solana_bsc_gton_direct_oracle:
+  susy_solana_bsc_ray_direct_oracle:
     image: gravityhuborg/gravity-oracle:master
-    container_name: susy_solana_bsc_gton_direct_oracle
+    container_name: susy_solana_bsc_ray_direct_oracle
     tty: true
     restart: always
     environment:
@@ -36,9 +36,9 @@ services:
       - /home/main2:/etc/gravity
     networks:
       - app-network
-  susy_solana_bsc_gton_reverse_oracle:
+  susy_solana_bsc_ray_reverse_oracle:
     image: gravityhuborg/gravity-oracle:master
-    container_name: susy_solana_bsc_gton_reverse_oracle
+    container_name: susy_solana_bsc_ray_reverse_oracle
     tty: true
     restart: always
     environment:
