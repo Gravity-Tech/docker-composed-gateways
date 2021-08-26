@@ -11,6 +11,7 @@
     "ib_port_program": "DSZqp3Q3ydt5HeFeX1PfZJWAK8Re7ZoitK3eoot2aRyY",
     "ib_port_data": "CAGB99utwtaC5XbfeECB1JE2VsTXvw3bYpu57jzYEN8S",
     "token_program": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
-    "ib_port_pda": "8drhoQ7iAYD9DLY5RBxtQ8BS9vWRMF4nkGG1bnsED9su"
+    "ib_port_pda": "8drhoQ7iAYD9DLY5RBxtQ8BS9vWRMF4nkGG1bnsED9su",
+    "ib_port_pda_token_account": "GcnLCDRvDqWWq3CoERdTGSkwMU2cRonC6is4sxM7qbHq"
   }
 }
