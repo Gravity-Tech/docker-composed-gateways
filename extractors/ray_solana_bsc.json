@@ -1,5 +1,5 @@
 {
-  "SourceDecimals": 8,
+  "SourceDecimals": 6,
   "DestinationDecimals": 18,
   "SourceNodeURL": "https://api.mainnet-beta.solana.com",
   "DestinationNodeURL": "https://target.nodes.gravityhub.org/bsc",
