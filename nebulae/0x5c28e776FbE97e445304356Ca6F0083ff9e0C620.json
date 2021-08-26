@@ -1,5 +1,5 @@
 {
- "TargetChainNodeUrl": "https://apis.ankr.com/df83d02a78e74e3ca10f63196a974c67/d37735e535d9d051230799cae45aeb6a/avax/archive/main",
+ "TargetChainNodeUrl": "https://api.avax.network/ext/bc/C/rpc",
  "ChainId": "",
  "GravityNodeUrl": "http://172.17.0.1:26657",
  "ChainType": "avax",
