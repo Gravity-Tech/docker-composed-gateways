@@ -6,6 +6,7 @@
   "LUPortAddress": "CAGB99utwtaC5XbfeECB1JE2VsTXvw3bYpu57jzYEN8S",
   "IBPortAddress": "0xA3E9c5f57460c056dE97f14247517FA8e2A55F02",
   "Meta": {
-    "token_mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+    "token_mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "ib_port_pda_token_account": "GcnLCDRvDqWWq3CoERdTGSkwMU2cRonC6is4sxM7qbHq"
   }
 }
