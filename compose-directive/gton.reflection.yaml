@@ -1,8 +1,8 @@
 version: "3"
 services:
-  reflection_oracle:
+  graviton_reflection_oracle:
     image: gravityhuborg/gravity-oracle:master
-    container_name: reflection_oracle
+    container_name: graviton_reflection_oracle
     tty: true
     restart: always
     environment:
