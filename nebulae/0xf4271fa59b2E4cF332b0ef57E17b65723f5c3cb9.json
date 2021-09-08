@@ -1,0 +1,8 @@
+{
+  "TargetChainNodeUrl": "https://target.nodes.gravityhub.org/ftm",
+  "ChainId": "",
+  "GravityNodeUrl": "http://172.17.0.1:26657",
+  "ChainType": "ftm",
+  "ExtractorUrl": "http://ec2-18-130-243-3.eu-west-2.compute.amazonaws.com:31770",
+  "BlocksInterval": 40
+}
