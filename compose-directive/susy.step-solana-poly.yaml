@@ -1,0 +1,52 @@
+
+version: "3"
+services:
+  susy_solana_polygon_step_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_solana_polygon_step_direct_extractor
+    tty: true
+    restart: always
+    command: --config step_solana_poly.json --type "solana-evm-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8385:8090"
+    networks:
+      - app-network
+  susy_solana_polygon_step_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_solana_polygon_step_reverse_extractor
+    tty: true
+    restart: always
+    command: --config step_solana_poly.json --type "solana-evm-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8386:8090"
+    networks:
+      - app-network
+  susy_solana_polygon_step_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_solana_polygon_step_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xDB7070689b4964f708E73Cf50034551528531C00
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_solana_polygon_step_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_solana_polygon_step_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=6SmEwqZdGVwdbid9RnG3jWRFR4Qx5Vy2dtb3WcD2ywX3
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
