@@ -1,0 +1,16 @@
+version: "3"
+services:
+  fantom_reflection_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: fantom_reflection_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0xf4271fa59b2E4cF332b0ef57E17b65723f5c3cb9
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
