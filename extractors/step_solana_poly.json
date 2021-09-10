@@ -2,7 +2,7 @@
   "SourceDecimals": 9,
   "DestinationDecimals": 18,
   "SourceNodeURL": "https://api.mainnet-beta.solana.com",
-  "DestinationNodeURL": "https://target.nodes.gravityhub.org/polygon",
+  "DestinationNodeURL": "https://polygon-rpc.com",
   "LUPortAddress": "4a5Rap1zFjwW5jS5AE11HwHkbVsjRthHkq3rfwJ5xGbJ",
   "IBPortAddress": "0x129FcA01Ed07F65e713284305a2937F79e265299",
   "Meta": {
