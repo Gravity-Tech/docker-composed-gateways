@@ -1,5 +1,5 @@
 {
-  "TargetChainNodeUrl": "https://target.nodes.gravityhub.org/polygon",
+  "TargetChainNodeUrl": "https://polygon-rpc.com",
   "ChainId": "137",
   "GravityNodeUrl": "http://172.17.0.1:26657",
   "ChainType": "polygon",
