@@ -3,7 +3,7 @@
   "ChainId": "",
   "GravityNodeUrl": "http://172.17.0.1:26657",
   "ChainType": "solana",
-  "ExtractorUrl": "http://172.17.0.1:8382",
+  "ExtractorUrl": "http://172.17.0.1:8386",
   "BlocksInterval": 65,
   "Custom": {
     "nebula_program": "B5WUzWR2uNMwQhziPH882JekyQSmYHUt5N1LtpLdmSNB",
