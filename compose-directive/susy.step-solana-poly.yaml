@@ -1,4 +1,3 @@
-
 version: "3"
 services:
   susy_solana_polygon_step_direct_extractor:
@@ -31,7 +30,7 @@ services:
     tty: true
     restart: always
     environment:
-      - NEBULA_ADDRESS=0xDB7070689b4964f708E73Cf50034551528531C00
+      - NEBULA_ADDRESS=0xB8dB36E0D5e1BAACA0EDE9a47f9Fa57B227da593
     volumes:
       - /home/main2:/etc/gravity
     networks:
