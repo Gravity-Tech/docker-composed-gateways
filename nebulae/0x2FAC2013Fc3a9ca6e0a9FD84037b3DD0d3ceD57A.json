@@ -1,5 +1,5 @@
 {
- "TargetChainNodeUrl": "https://target.nodes.gravityhub.org/ftm",
+ "TargetChainNodeUrl": "https://rpcapi-tracing.fantom.network",
  "ChainId": "",
  "GravityNodeUrl": "http://172.17.0.1:26657",
  "ChainType": "ftm",
