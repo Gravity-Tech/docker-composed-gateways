@@ -2,7 +2,7 @@
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
   "SourceNodeURL": "https://api.mainnet-beta.solana.com",
-  "DestinationNodeURL": "https://target.nodes.gravityhub.org/bsc",
+  "DestinationNodeURL": "https://bsc-dataseed.binance.org",
   "LUPortAddress": "CAGB99utwtaC5XbfeECB1JE2VsTXvw3bYpu57jzYEN8S",
   "IBPortAddress": "0xA3E9c5f57460c056dE97f14247517FA8e2A55F02",
   "Meta": {
