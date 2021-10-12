@@ -1,5 +1,5 @@
 {
- "TargetChainNodeUrl": "https://target.nodes.gravityhub.org/heco",
+ "TargetChainNodeUrl": "https://http-mainnet.hecochain.com",
  "ChainId": "",
  "GravityNodeUrl": "http://172.17.0.1:26657",
  "ChainType": "heco",

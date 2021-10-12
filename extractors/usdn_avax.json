@@ -1,7 +1,7 @@
 {
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
-  "SourceNodeURL": "https://target.nodes.gravityhub.org/waves",
+  "SourceNodeURL": "https://nodes.swop.fi",
   "DestinationNodeURL": "https://apis.ankr.com/df83d02a78e74e3ca10f63196a974c67/d37735e535d9d051230799cae45aeb6a/avax/archive/main",
   "IBPortAddress": "0x9a7B1800CE35aAca97d7Aa06d82F61cb971E947c",
   "LUPortAddress": "3PDdegFA8R2jUAZHpppcyAdQJ5BFsSMx4Pm"

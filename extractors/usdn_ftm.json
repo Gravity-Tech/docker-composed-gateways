@@ -1,7 +1,7 @@
 {
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
-  "SourceNodeURL": "https://target.nodes.gravityhub.org/waves",
+  "SourceNodeURL": "https://nodes.swop.fi",
   "DestinationNodeURL": "https://rpcapi-tracing.fantom.network",
   "IBPortAddress": "0x83d97d01db4ae12CB637e0732BbB3569d0D218e9",
   "LUPortAddress": "3PPJ2HnXKjuaTopung1K2DsrgMigpwXHsFF"

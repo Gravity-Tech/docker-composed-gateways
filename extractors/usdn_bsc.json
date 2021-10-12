@@ -1,7 +1,7 @@
 {
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
-  "SourceNodeURL": "https://target.nodes.gravityhub.org/waves",
+  "SourceNodeURL": "https://nodes.swop.fi",
   "DestinationNodeURL": "https://bsc-dataseed.binance.org",
   "IBPortAddress": "0x8c0e11a6E692d02f71598AB5050083ED691Eb760",
   "LUPortAddress": "3PEXiW1BrBNMo5A9dfj2CnBW2mwMiaf2sAe"
