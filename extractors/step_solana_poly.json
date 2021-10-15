@@ -6,7 +6,6 @@
   "LUPortAddress": "4a5Rap1zFjwW5jS5AE11HwHkbVsjRthHkq3rfwJ5xGbJ",
   "IBPortAddress": "0x129FcA01Ed07F65e713284305a2937F79e265299",
   "Meta": {
-    "token_mint": "StepAscQoEioFxxWGnh2sLBDFp9d8rvKz2Yp39iDpyT",
-    "additional_port_data": ["4a5Rap1zFjwW5jS5AE11HwHkbVsjRthHkq3rfwJ5xGbJ"]
+    "token_mint": "StepAscQoEioFxxWGnh2sLBDFp9d8rvKz2Yp39iDpyT"
   }
 }
