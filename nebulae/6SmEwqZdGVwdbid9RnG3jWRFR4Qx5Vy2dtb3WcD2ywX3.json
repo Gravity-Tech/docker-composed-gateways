@@ -1,5 +1,5 @@
 {
-  "TargetChainNodeUrl": "https://api.mainnet-beta.solana.com",
+  "TargetChainNodeUrl": "https://dawn-nameless-bush.solana-mainnet.quiknode.pro/05c403fb121e8e3b4aa92e3aaed610d70ef2bfa9",
   "ChainId": "",
   "GravityNodeUrl": "http://172.17.0.1:26657",
   "ChainType": "solana",

@@ -2,7 +2,7 @@
   "SourceDecimals": 18,
   "DestinationDecimals": 8,
   "SourceNodeURL": "https://apis.ankr.com/6052791850e6426392593b0ddba45bf5/d37735e535d9d051230799cae45aeb6a/polygon/full/main",
-  "DestinationNodeURL": "https://api.mainnet-beta.solana.com",
+  "DestinationNodeURL": "https://dawn-nameless-bush.solana-mainnet.quiknode.pro/05c403fb121e8e3b4aa92e3aaed610d70ef2bfa9",
   "LUPortAddress": "0xD2C80231a5E1C7B621c2bb96819b20a00E1be7D2",
   "IBPortAddress": "B9mZLg1yk7eFPBJ7PSN15tHVzuWidKg5L68uzCiSAsSm",
   "Meta": {
