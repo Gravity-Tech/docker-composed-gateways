@@ -1,5 +1,5 @@
 {
-    "TargetChainNodeUrl": "https://rpcapi-tracing.fantom.network",
+    "TargetChainNodeUrl": "https://apis.ankr.com/c3f382db4c55497b81bf3feb1e9a8499/d37735e535d9d051230799cae45aeb6a/fantom/full/main",
     "ChainId": "",
     "GravityNodeUrl": "http://172.17.0.1:26657",
     "ChainType": "ftm",

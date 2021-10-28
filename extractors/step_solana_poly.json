@@ -2,7 +2,7 @@
   "SourceDecimals": 9,
   "DestinationDecimals": 18,
   "SourceNodeURL": "https://api.mainnet-beta.solana.com",
-  "DestinationNodeURL": "https://polygon-rpc.com",
+  "DestinationNodeURL": "https://apis.ankr.com/6052791850e6426392593b0ddba45bf5/d37735e535d9d051230799cae45aeb6a/polygon/full/main",
   "LUPortAddress": "4a5Rap1zFjwW5jS5AE11HwHkbVsjRthHkq3rfwJ5xGbJ",
   "IBPortAddress": "0x129FcA01Ed07F65e713284305a2937F79e265299",
   "Meta": {

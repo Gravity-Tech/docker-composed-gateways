@@ -2,7 +2,7 @@
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
   "SourceNodeURL": "https://nodes.swop.fi",
-  "DestinationNodeURL": "https://rpcapi-tracing.fantom.network",
+  "DestinationNodeURL": "https://apis.ankr.com/c3f382db4c55497b81bf3feb1e9a8499/d37735e535d9d051230799cae45aeb6a/fantom/full/main",
   "IBPortAddress": "0x83d97d01db4ae12CB637e0732BbB3569d0D218e9",
   "LUPortAddress": "3PPJ2HnXKjuaTopung1K2DsrgMigpwXHsFF"
 }
