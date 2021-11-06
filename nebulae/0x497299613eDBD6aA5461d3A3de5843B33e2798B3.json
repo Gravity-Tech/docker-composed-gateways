@@ -1,7 +1,7 @@
 {
   "TargetChainNodeUrl": "https://http-mainnet.hecochain.com",
   "ChainId": "",
-  "GravityNodeUrl": "http://172.17.0.1:26657",
+  "GravityNodeUrl": "http://172.17.0.1:26688",
   "ChainType": "heco",
   "ExtractorUrl": "http://172.17.0.1:8290",
   "BlocksInterval": 10
