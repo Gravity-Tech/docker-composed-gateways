@@ -1,7 +1,7 @@
 {
   "SourceDecimals": 6,
   "DestinationDecimals": 18,
-  "SourceNodeURL": "https://dawn-nameless-bush.solana-mainnet.quiknode.pro/05c403fb121e8e3b4aa92e3aaed610d70ef2bfa9",
+  "SourceNodeURL": "https://api.mainnet-beta.solana.com",
   "DestinationNodeURL": "https://bsc-dataseed.binance.org",
   "LUPortAddress": "CAGB99utwtaC5XbfeECB1JE2VsTXvw3bYpu57jzYEN8S",
   "IBPortAddress": "0xA3E9c5f57460c056dE97f14247517FA8e2A55F02",
