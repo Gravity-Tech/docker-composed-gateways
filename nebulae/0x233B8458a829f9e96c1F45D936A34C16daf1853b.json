@@ -1,0 +1,9 @@
+{
+    "TargetChainNodeUrl": "https://exchainrpc.okex.org",
+    "ChainId": "",
+    "GravityNodeUrl": "http://172.17.0.1:26688",
+    "ChainType": "bsc",
+    "ExtractorUrl": "http://172.17.0.1:8391",
+    "BlocksInterval": 10
+  }
+  

@@ -1,0 +1,52 @@
+
+version: "3"
+services:
+  susy_solana_okex_ray_direct_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_solana_okex_ray_direct_extractor
+    tty: true
+    restart: always
+    command: --config ray_solana_okex.json --type "solana-evm-direct"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8391:8090"
+    networks:
+      - app-network
+  susy_solana_okex_ray_reverse_extractor:
+    image: gravityhuborg/gravity-data-extractor:master
+    container_name: susy_solana_okex_ray_reverse_extractor
+    tty: true
+    restart: always
+    command: --config ray_solana_okex.json --type "solana-evm-reverse"
+    volumes:
+      - /home/extractor-configs:/etc/extractor
+    ports:
+      - "8392:8090"
+    networks:
+      - app-network
+  susy_solana_okex_ray_direct_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_solana_okex_ray_direct_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=0x233B8458a829f9e96c1F45D936A34C16daf1853b
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+  susy_solana_okex_ray_reverse_oracle:
+    image: gravityhuborg/gravity-oracle:master
+    container_name: susy_solana_okex_ray_reverse_oracle
+    tty: true
+    restart: always
+    environment:
+      - NEBULA_ADDRESS=H3TLDKMKk2HsfLrMaa57oBoPEMFhw3R53c9y8czbDeW3
+    volumes:
+      - /home/main2:/etc/gravity
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

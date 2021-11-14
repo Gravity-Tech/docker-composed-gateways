@@ -1,0 +1,11 @@
+{
+  "SourceDecimals": 6,
+  "DestinationDecimals": 18,
+  "SourceNodeURL": "https://api.mainnet-beta.solana.com",
+  "DestinationNodeURL": "https://exchainrpc.okex.org",
+  "LUPortAddress": "CGgnzuy1JvqhxXUaiZJs9SaX2kVjHpRbhUWWiJhLVLrD",
+  "IBPortAddress": "0x66d123716a8F35e32032428aBfb5844DF6a4bA4D",
+  "Meta": {
+    "token_mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+  }
+}
